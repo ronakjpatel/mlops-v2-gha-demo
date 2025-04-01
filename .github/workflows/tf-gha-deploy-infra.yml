@@ -43,3 +43,8 @@ jobs:
       name: deploy-aml-workspace
       run: echo "OK"
 
+    - name: Install Azure CLI
+      run: |
+          curl -sL https://aka.ms/azure-cli/install | sudo bash
+          az --version  # Verify the installation and version
+
